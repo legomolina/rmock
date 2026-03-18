@@ -1,0 +1,32 @@
+default:
+  proxy: "http://localhost:3000"
+
+endpoints:
+    - path: "/api/ping"
+      method: "GET"
+      response:
+        status: 200
+        headers:
+          Content-Type: "text/plain"
+        body: "pong!"
+
+    - path: "/api/users"
+      method: "GET"
+      response:
+          status: 200
+          headers:
+              Content-Type: "application/json"
+          body: '{"users": [{"id": 1, "name": "John"}, {"id": 2, "name": "Jane"}]}'
+
+    - path: "/api/users/{userId}"
+      method: "GET"
+      response:
+          status: 200
+          headers:
+              Content-Type: "application/json"
+          body: '{"id": ".userId", "name": "John Doe", "email": "johndoe@gmail.com", "birthdate": "1990-02-03"}'
+
+    - path: "/proxy/ping"
+      method: "GET"
+      response:
+        proxy: "http://localhost:3000/api/ping"
