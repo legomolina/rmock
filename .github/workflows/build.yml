@@ -22,8 +22,8 @@ jobs:
             os: macos-latest
             target: x86_64-apple-darwin
           - build: windows
-            os: ubuntu-latest
-            target: x86_64-pc-windows-gnu
+            os: windows-latest
+            target: x86_64-pc-windows-msvc
     steps:
       - name: Clone repository
         uses: actions/checkout@v5
