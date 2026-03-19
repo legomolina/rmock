@@ -5,7 +5,7 @@ Download the executable, create the routes.yml file and execute it.
 
 ## Installation and usage
 
-Go to the [releases](https://github.com/joseph-onigiri/mock-server/releases) page and download the latest release for your platform.
+Go to the [releases](https://github.com/legomolina/rmock/releases) page and download the latest release for your platform.
 
 Once you have the executable, create a `routes.yml` with the routes you want to mock. You can find an example in the `examples` folder.
 
